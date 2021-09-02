@@ -22,7 +22,7 @@ app.get('/', isLoggedIn, (req, res) => {
 
 
 
-mongoose.connect('mongodb://localhost:27017/twitter', {
+mongoose.connect('mongodb://localhost:27017/twitter-clone', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
