@@ -1,7 +1,7 @@
 :root {
-    --twitter-ka-color: #0099ff;
-    --buttonHoverBg: #d4edff;
+    --twitterColor: #0099ff;
     --lightGrey: rgb(230, 236, 240);
+    --buttonHoverBackground: #d4edff;
     --spacing: 15px;
 }
 
@@ -22,11 +22,11 @@ nav a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--twitter-ka-color);
+    color: var(--twitterColor);
 }
 
 nav a:hover {
-    background-color: var(--buttonHoverBg);
+    background-color: var(--buttonHoverBackground);
     border-radius: 50%;
 }
 
@@ -37,16 +37,16 @@ nav a:hover {
     flex-direction: column;
 }
 
-.titleContainer {
+.title-container {
     height: 53px;
     padding: 0 var(--spacing);
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--spacing);
     flex-shrink: 0;
 }
 
-.titleContainer h1 {
+.title-container h1 {
     flex: 1;
 }
 
@@ -69,17 +69,12 @@ h1 {
 }
 
 .userImageContainer img {
-    width: 100%;
+    width: 50px;
     border-radius: 50%;
     background-color: white;
 }
 
-.textareaContainer {
-    flex: 1;
-    padding-left: var(--spacing);
-}
-
-.textareaContainer textarea {
+.textAreaContainer textarea {
     width: 100%;
     border: none;
     resize: none;
@@ -91,7 +86,7 @@ textarea:focus {
 }
 
 #submitPostButton {
-    background-color: var(--twitter-ka-color);
+    background-color: var(--twitterColor);
     color: white;
     border: none;
     border-radius: 40px;
